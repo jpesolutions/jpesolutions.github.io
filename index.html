@@ -1,3 +1,173 @@
-<meta http-equiv="refresh" content="0; url=home.html" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JPE Solutions | RF & PCB Engineering</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
 
-Hello World
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      box-sizing: border-box;
+    }
+
+    header {
+      background: #0a1f44;
+      color: white;
+      padding: 2rem 0 1rem;
+      text-align: center;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .top-bar-center {
+      text-align: center;
+      width: 100%;
+    }
+
+    .top-bar-center h1 {
+      margin: 0;
+    }
+
+    .top-bar-center p {
+      margin: 0.5rem 0 0;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #a9cfff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .services, .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container top-bar">
+    <img src="img/logo.png" alt="JPE Solutions Logo" class="logo" />
+    <div class="top-bar-center">
+      <h1>JPE Solutions</h1>
+      <p>End-to-End RF and PCB Engineering Solutions</p>
+    </div>
+  </div>
+  <nav class="container">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about" class="container">
+  <h2>About Us</h2>
+  <p>
+    JPE Solutions specializes in radio frequency (RF) and printed circuit board (PCB) design, offering full-spectrum support from concept to manufacturing. With deep industry expertise and a passion for precision, we turn complex requirements into reliable hardware.
+  </p>
+</section>
+
+<section id="services" class="container">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>RF System Architecture</h3>
+      <p>High-frequency system design including filters, amplifiers, and transceivers.</p>
+    </div>
+    <div class="card">
+      <h3>PCB Layout & Design</h3>
+      <p>Multi-layer high-speed PCB layout, impedance matching, and signal integrity.</p>
+    </div>
+    <div class="card">
+      <h3>Prototyping & Fabrication</h3>
+      <p>From initial concepts to manufacturable prototypes using industry-standard tools.</p>
+    </div>
+    <div class="card">
+      <h3>Testing & Validation</h3>
+      <p>RF tuning, EMC testing, and performance optimization for regulatory compliance.</p>
+    </div>
+    <div class="card">
+      <h3>Consulting & Support</h3>
+      <p>Engineering consultation, schematic reviews, and custom training sessions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:contact@jpe.solutions">contact@jpe.solutions</a></p>
+  <p>Let us help you bring your next RF or PCB project to life.</p>
+</section>
+
+<footer>
+  &copy; 2025 JPE Solutions. All rights reserved.
+</footer>
+
+</body>
+</html>
